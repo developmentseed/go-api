@@ -18,15 +18,15 @@ resource "helm_release" "ifrcgo-ingress-nginx" {
     value = "Local"
   }
 
-  set {
-    name = "controller.config.use-proxy-protocol"
-    value = "false"
-  }
+ # set {
+ #   name = "controller.config.use-proxy-protocol"
+ #   value = "false"
+ # }
 
-  set {
-    name = "controller.config.use-forwarded-headers"
-    value = "false"
-  }
+ # set {
+ #   name = "controller.config.use-forwarded-headers"
+ #   value = "false"
+ # }
 
   set {
     name = "controller.replicaCount"
